@@ -2839,7 +2839,7 @@ body {
         background: var(--primary-gradient);
         width: calc(100% - 20px);
         max-width: 720px;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         border-radius: 0 0 20px 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         transition: opacity 0.3s ease, transform 0.3s ease;
@@ -2847,6 +2847,8 @@ body {
         justify-content: flex-start;
         overflow-y: auto;
         z-index: 3500;
+        max-height: calc(100vh - 120px); /* responsive height based on viewport */
+        min-height: auto; /* allow natural sizing */
     }
 
     .nav-menu.active {
@@ -2865,18 +2867,19 @@ body {
     }
     
     .nav-menu li {
-        margin: 0.001rem 0;
+        margin: 0;
         text-align: center;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         flex: none;
         display: flex;
         align-items: center;
+        min-height: 44px; /* ensure touch-friendly minimum */
     }
     
     .nav-link {
         font-size: 1.1rem;
         font-weight: 500;
-        padding: 0.4rem 0;
+        padding: 0.2rem 0;
         display: block;
         border-radius: 12px;
         transition: all 0.3s ease;
