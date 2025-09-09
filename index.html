@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftCode Pro - Next Level Software Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Spline Web Component -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.40/build/spline-viewer.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <i class="fas fa-code-branch"></i>
+                <span>SoftCode Pro</span>
+            </div>
+            <div class="loading-animation">
+                <div class="loading-spinner">
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                </div>
+                <div class="loading-text">
+                    <span class="loading-message">Initializing Experience...</span>
+                    <div class="loading-progress">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <span class="loading-percentage" id="loading-percentage">0%</span>
+                </div>
+            </div>
+            <div class="loading-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home"><i class="fas fa-code-branch"></i> SoftCode Pro</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#technical" class="nav-link">Technical</a></li>
+                <li class="nav-item"><a href="#process" class="nav-link">Process</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item mobile-signup"><a href="#" class="nav-link btn-signup-mobile">Sign Up</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-signin">Sign Up</a>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="type" data-text="Building Tomorrow's "></span>
+                    <span class="gradient-text"><span class="type" data-text="Digital Future"></span></span>
+                </h1>
+                <p class="hero-subtitle">
+                    Premier Software Development Company
+                </p>
+                <p class="hero-description">
+                    We craft cutting-edge software solutions that transform businesses and drive innovation. 
+                    From concept to deployment, we deliver excellence in every line of code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="spline-wrapper">
+                    <spline-viewer
+                        loading-anim
+                        class="spline-canvas"
+                        style="background: transparent"
+                        url="https://prod.spline.design/VK7Onj47gjerxSxX/scene.splinecode">
+                    </spline-viewer>
+                    <div class="hire-me-button">
+                        <a href="#contact" class="btn-hire">
+                            <i class="fas fa-rocket"></i>
+                            Hire Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight-text">SoftCode Pro</span></h2>
+                <p class="section-subtitle">Transforming ideas into powerful digital solutions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To empower businesses with cutting-edge software solutions that drive innovation, efficiency, and growth in the digital age.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To be the leading software development partner, recognized for excellence, innovation, and transformative digital solutions.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Quality, integrity, innovation, and client satisfaction are at the core of everything we do at SoftCode Pro.</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Projects Completed</div>
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Happy Clients</div>
+                            <div class="stat-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support Available</div>
+                            <div class="stat-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Solutions</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>On-Time Delivery</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <span>Expert Team</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Scalable Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services expert-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight-text">Expert Services</span></h2>
+                <p class="section-subtitle">Comprehensive software solutions for your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom web applications built with modern technologies and responsive design principles for exceptional user experiences.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Frontend Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Backend Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Full Stack Solutions</span>
+                        </div>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android platforms with optimal performance.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>iOS Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Android Development</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Cross-Platform Apps</span>
+                        </div>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Apps Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.8★</span>
+                            <span class="stat-label">App Rating</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Database Management</h3>
+                    <p>Efficient database design, optimization, and management for scalable applications with high performance.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Database Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Performance Optimization</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Data Migration</span>
+                        </div>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">100TB+</span>
+                            <span class="stat-label">Data Managed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and deployment solutions for modern applications with enterprise-grade security.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Cloud Migration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>DevOps Services</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Infrastructure Management</span>
+                        </div>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Deployments</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Monitoring</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Security Solutions</h3>
+                    <p>Advanced security implementations to protect your applications and data with industry-leading practices.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Security Audits</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Penetration Testing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Compliance Solutions</span>
+                        </div>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">Zero</span>
+                            <span class="stat-label">Breaches</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">ISO</span>
+                            <span class="stat-label">Certified</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock technical support and maintenance for your software solutions with dedicated experts.</p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Technical Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>System Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Regular Updates</span>
+                        </div>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">&lt;5min</span>
+                            <span class="stat-label">Response Time</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Available</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight-text">Portfolio</span></h2>
+                <p class="section-subtitle">Showcasing our latest projects and achievements</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img
+                            class="portfolio-img"
+                            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=90"
+                            srcset="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=85 1000w, https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=90 1400w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 450px"
+                            alt="Ultra-modern e-commerce platform with sleek laptop displaying premium shopping interface"
+                            loading="lazy"
+                            decoding="async"
+                            width="1400" height="800"
+                            referrerpolicy="no-referrer"
+                            onerror="this.onerror=null; this.src='ecommerce-platform.svg'; this.srcset='';"
+                        >
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <div class="portfolio-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">98%</span>
+                                        <span class="stat-label">Performance</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">50K+</span>
+                                        <span class="stat-label">Users</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3>E-Commerce Platform</h3>
+                            <div class="portfolio-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <p>Modern e-commerce solution with advanced features and seamless user experience.</p>
+                        <div class="portfolio-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="portfolio-footer">
+                            <div class="project-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>3 months</span>
+                            </div>
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img
+                            class="portfolio-img"
+                            src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1200&q=80"
+                            srcset="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=75 900w, https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1200&q=80 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                            alt="Real-time analytics dashboard with charts on a laptop screen"
+                            loading="lazy"
+                            width="1200" height="750"
+                            referrerpolicy="no-referrer"
+                            onerror="this.onerror=null; this.src='analytics-dashboard.svg'; this.srcset='';"
+                        >
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <div class="portfolio-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">95%</span>
+                                        <span class="stat-label">Accuracy</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">24/7</span>
+                                        <span class="stat-label">Uptime</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3>Analytics Dashboard</h3>
+                            <div class="portfolio-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <p>Real-time analytics dashboard with interactive charts and data visualization.</p>
+                        <div class="portfolio-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="portfolio-footer">
+                            <div class="project-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>4 months</span>
+                            </div>
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img
+                            class="portfolio-img"
+                            src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80"
+                            srcset="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=75 900w, https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                            alt="Learning management system with online courses and progress tracking on desktop"
+                            loading="lazy"
+                            width="1200" height="750"
+                            referrerpolicy="no-referrer"
+                            onerror="this.onerror=null; this.src='learning-management.svg'; this.srcset='';"
+                        >
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <div class="portfolio-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">10K+</span>
+                                        <span class="stat-label">Students</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">99%</span>
+                                        <span class="stat-label">Satisfaction</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3>Learning Management System</h3>
+                            <div class="portfolio-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <p>Comprehensive LMS with course management and student tracking capabilities.</p>
+                        <div class="portfolio-tags">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="portfolio-footer">
+                            <div class="project-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>6 months</span>
+                            </div>
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img
+                            class="portfolio-img"
+                            src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80"
+                            srcset="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=75 900w, https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                            alt="Fitness tracking mobile app on smartphone showing health stats"
+                            loading="lazy"
+                            width="1200" height="750"
+                            referrerpolicy="no-referrer"
+                            onerror="this.onerror=null; this.src='fitness-app.svg'; this.srcset='';"
+                        >
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <div class="portfolio-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">4.8★</span>
+                                        <span class="stat-label">App Store</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">100K+</span>
+                                        <span class="stat-label">Downloads</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3>Fitness Tracking App</h3>
+                            <div class="portfolio-status">
+                                <span class="status-badge in-progress">In Progress</span>
+                            </div>
+                        </div>
+                        <p>Cross-platform fitness app with AI-powered workout recommendations and progress tracking.</p>
+                        <div class="portfolio-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <div class="portfolio-footer">
+                            <div class="project-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>5 months</span>
+                            </div>
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img
+                            class="portfolio-img"
+                            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+                            srcset="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=75 900w, https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                            alt="AI chatbot and neural network visualization in a modern interface"
+                            loading="lazy"
+                            width="1200" height="750"
+                        >
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <div class="portfolio-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">85%</span>
+                                        <span class="stat-label">Efficiency</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">24/7</span>
+                                        <span class="stat-label">Active</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3>AI Chatbot Platform</h3>
+                            <div class="portfolio-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <p>Intelligent chatbot platform with natural language processing and machine learning capabilities.</p>
+                        <div class="portfolio-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <div class="portfolio-footer">
+                            <div class="project-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>8 months</span>
+                            </div>
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img
+                            class="portfolio-img"
+                            src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1400&q=85"
+                            srcset="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=700&q=75 700w, https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1400&q=85 1400w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 450px"
+                            alt="Advanced cybersecurity concept with padlock over binary code and modern workstation"
+                            loading="lazy"
+                            decoding="async"
+                            width="1400" height="800"
+                            referrerpolicy="no-referrer"
+                            onerror="this.onerror=null; this.src='cybersecurity-suite.svg'; this.srcset='';"
+                        >
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <div class="portfolio-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">99.9%</span>
+                                        <span class="stat-label">Security</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">0</span>
+                                        <span class="stat-label">Breaches</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3>Cybersecurity Suite</h3>
+                            <div class="portfolio-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <p>Enterprise-grade cybersecurity solution with threat detection and incident response automation.</p>
+                        <div class="portfolio-tags">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Blockchain</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="portfolio-footer">
+                            <div class="project-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>12 months</span>
+                            </div>
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Business <span class="highlight-text">Pricing Plans</span></h2>
+                <p class="section-subtitle">Choose a plan that works for you</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Standard</h3>
+                        <p class="plan-description">For Personal Usage</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$299.99</span>
+                        <span class="period">Per Month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Custom Web Development</li>
+                        <li><i class="fas fa-check"></i>Mobile App Development</li>
+                        <li><i class="fas fa-check"></i>24/7 Email Support</li>
+                        <li><i class="fas fa-check"></i>Basic Maintenance</li>
+                    </ul>
+                    <button class="pricing-btn">BUY NOW</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Premium</h3>
+                        <p class="plan-description">For Small Business</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$499.99</span>
+                        <span class="period">Per Month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Full Stack Development</li>
+                        <li><i class="fas fa-check"></i>Database Management</li>
+                        <li><i class="fas fa-check"></i>24/7 Priority Support</li>
+                        <li><i class="fas fa-check"></i>Advanced Security</li>
+                    </ul>
+                    <button class="pricing-btn">BUY NOW</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Exclusive</h3>
+                        <p class="plan-description">For Enterprise Level</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$799.99</span>
+                        <span class="period">Per Month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Enterprise Solutions</li>
+                        <li><i class="fas fa-check"></i>Cloud Infrastructure</li>
+                        <li><i class="fas fa-check"></i>24/7 Dedicated Support</li>
+                        <li><i class="fas fa-check"></i>Custom Integrations</li>
+                    </ul>
+                    <button class="pricing-btn">BUY NOW</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Ultimate</h3>
+                        <p class="plan-description">For Large Corporations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$1299.99</span>
+                        <span class="period">Per Month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Full-Scale Architecture</li>
+                        <li><i class="fas fa-check"></i>Multi-Platform Solutions</li>
+                        <li><i class="fas fa-check"></i>24/7 Premium Support</li>
+                        <li><i class="fas fa-check"></i>Advanced Analytics</li>
+                    </ul>
+                    <button class="pricing-btn">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight-text">Development Process</span></h2>
+                <p class="section-subtitle">A streamlined approach to software development</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Discovery & Planning</h3>
+                    <p>We analyze your requirements and create a comprehensive project roadmap.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Design & Prototype</h3>
+                    <p>Creating intuitive designs and interactive prototypes for your approval.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development</h3>
+                    <p>Building robust, scalable solutions using cutting-edge technologies.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Launch & Support</h3>
+                    <p>Deploying your solution and providing ongoing maintenance and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our <span class="highlight-text">Expert Team</span></h2>
+                <p class="section-subtitle">Passionate developers and designers crafting exceptional digital experiences</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="profile-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Heshan Sathyanga</h3>
+                        <p class="team-role">CEO & Lead Developer</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Full Stack</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                        <p class="team-bio">5+ years of experience in building scalable web applications and leading development teams.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="profile-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="team-role">UI/UX Designer</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Prototyping</span>
+                        </div>
+                        <p class="team-bio">Creative designer with expertise in user-centered design and modern interface development.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="profile-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Michael Chen</h3>
+                        <p class="team-role">Backend Developer</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                        <p class="team-bio">Backend specialist focused on building robust, scalable server architectures and APIs.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="profile-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Emily Rodriguez</h3>
+                        <p class="team-role">Project Manager</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Scrum</span>
+                            <span class="skill-tag">Leadership</span>
+                        </div>
+                        <p class="team-bio">Experienced project manager ensuring smooth delivery and client satisfaction across all projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Expertise Section -->
+    <section id="technical" class="technical-expertise">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="highlight-text">Expertise</span></h2>
+                <p class="section-subtitle">Advanced technologies and methodologies we master</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <p>End-to-end web application development using modern frameworks and best practices.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android platforms.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React Native</span>
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Swift</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Architecture</h3>
+                    <p>Scalable cloud solutions with microservices architecture and DevOps practices.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Intelligent solutions using artificial intelligence and machine learning algorithms.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">PyTorch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Offerings Section -->
+    <section id="service-offerings" class="service-offerings">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Service <span class="highlight-text">Offerings</span></h2>
+                <p class="section-subtitle">Comprehensive solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Custom Software Development</h3>
+                    </div>
+                    <p>Bespoke software solutions designed specifically for your business requirements and workflows.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i>Requirements Analysis</li>
+                        <li><i class="fas fa-check-circle"></i>System Architecture</li>
+                        <li><i class="fas fa-check-circle"></i>Quality Assurance</li>
+                        <li><i class="fas fa-check-circle"></i>Deployment & Support</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-price">Starting from $2,999</span>
+                        <a href="#contact" class="service-btn">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="service-item featured">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Digital Transformation</h3>
+                    </div>
+                    <p>Complete digital overhaul to modernize your business processes and enhance efficiency.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i>Process Automation</li>
+                        <li><i class="fas fa-check-circle"></i>Data Migration</li>
+                        <li><i class="fas fa-check-circle"></i>Staff Training</li>
+                        <li><i class="fas fa-check-circle"></i>Ongoing Optimization</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-price">Starting from $9,999</span>
+                        <a href="#contact" class="service-btn">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity Solutions</h3>
+                    </div>
+                    <p>Comprehensive security measures to protect your digital assets and sensitive data.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i>Security Audits</li>
+                        <li><i class="fas fa-check-circle"></i>Penetration Testing</li>
+                        <li><i class="fas fa-check-circle"></i>Compliance Management</li>
+                        <li><i class="fas fa-check-circle"></i>24/7 Monitoring</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-price">Starting from $1,999</span>
+                        <a href="#contact" class="service-btn">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Section -->
+    <section id="software" class="software">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight-text">Technologies</span></h2>
+                <p class="section-subtitle">Cutting-edge tools and frameworks we use</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Java</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Auto-scrolling Technologies Icons Bar -->
+            <div class="tech-marquee" aria-label="Technologies we use">
+                <div class="marquee-track">
+                    <i class="fab fa-react" title="React"></i>
+                    <i class="fab fa-vuejs" title="Vue.js"></i>
+                    <i class="fab fa-angular" title="Angular"></i>
+                    <i class="fab fa-js" title="JavaScript"></i>
+                    <i class="fab fa-node-js" title="Node.js"></i>
+                    <i class="fab fa-python" title="Python"></i>
+                    <i class="fab fa-php" title="PHP"></i>
+                    <i class="fab fa-java" title="Java"></i>
+                    <i class="fab fa-aws" title="AWS"></i>
+                    <i class="fab fa-docker" title="Docker"></i>
+                    <i class="fas fa-cubes" title="Kubernetes"></i>
+                    <i class="fas fa-database" title="PostgreSQL"></i>
+                    <i class="fas fa-leaf" title="MongoDB"></i>
+                    <i class="fas fa-bolt" title="Redis"></i>
+                    <i class="fas fa-code" title="TypeScript"></i>
+                    <!-- duplicate for seamless loop -->
+                    <i class="fab fa-react" title="React"></i>
+                    <i class="fab fa-vuejs" title="Vue.js"></i>
+                    <i class="fab fa-angular" title="Angular"></i>
+                    <i class="fab fa-js" title="JavaScript"></i>
+                    <i class="fab fa-node-js" title="Node.js"></i>
+                    <i class="fab fa-python" title="Python"></i>
+                    <i class="fab fa-php" title="PHP"></i>
+                    <i class="fab fa-java" title="Java"></i>
+                    <i class="fab fa-aws" title="AWS"></i>
+                    <i class="fab fa-docker" title="Docker"></i>
+                    <i class="fas fa-cubes" title="Kubernetes"></i>
+                    <i class="fas fa-database" title="PostgreSQL"></i>
+                    <i class="fas fa-leaf" title="MongoDB"></i>
+                    <i class="fas fa-bolt" title="Redis"></i>
+                    <i class="fas fa-code" title="TypeScript"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Insights Section -->
+    <section id="blogs" class="blogs insights-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest <span class="highlight-text">Insights</span></h2>
+                <p class="section-subtitle">Stay updated with our latest thoughts and industry trends</p>
+            </div>
+            <div class="insights-grid">
+                <article class="insight-card featured">
+                    <div class="insight-image">
+                        <img
+                            class="insight-img"
+                            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1400&q=90"
+                            srcset="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=85 1000w, https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1400&q=90 1400w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 640px"
+                            alt="Modern developer desk with multi-screen web development environment"
+                            loading="lazy"
+                            decoding="async"
+                            width="1400" height="900"
+                            referrerpolicy="no-referrer"
+                        >
+                        <div class="insight-overlay">
+                            <div class="overlay-content">
+                                <span class="read-time"><i class="fas fa-clock"></i> 5 min read</span>
+                                <div class="insight-stats">
+                                    <span class="views"><i class="fas fa-eye"></i> 2.5k</span>
+                                    <span class="likes"><i class="fas fa-heart"></i> 180</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-meta">
+                            <span class="insight-date"><i class="fas fa-calendar"></i> Dec 15, 2024</span>
+                            <span class="insight-category development">Development</span>
+                        </div>
+                        <h3>The Future of Web Development</h3>
+                        <p>Exploring emerging trends and technologies shaping the future of web development. Discover the latest frameworks, tools, and methodologies that are revolutionizing how we build digital experiences.</p>
+                        <div class="insight-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">WebAssembly</span>
+                        </div>
+                        <div class="insight-footer">
+                            <div class="author-info">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <span class="author-name">SoftCode Pro Team</span>
+                            </div>
+                            <a href="#" class="insight-link">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="insight-card">
+                    <div class="insight-image">
+                        <img
+                            class="insight-img"
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1400&q=90"
+                            srcset="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=85 1000w, https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1400&q=90 1400w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 640px"
+                            alt="Mobile app development with smartphone and code editor in a premium setup"
+                            loading="lazy"
+                            decoding="async"
+                            width="1400" height="900"
+                            referrerpolicy="no-referrer"
+                        >
+                        <div class="insight-overlay">
+                            <div class="overlay-content">
+                                <span class="read-time"><i class="fas fa-clock"></i> 7 min read</span>
+                                <div class="insight-stats">
+                                    <span class="views"><i class="fas fa-eye"></i> 1.8k</span>
+                                    <span class="likes"><i class="fas fa-heart"></i> 142</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-meta">
+                            <span class="insight-date"><i class="fas fa-calendar"></i> Dec 10, 2024</span>
+                            <span class="insight-category mobile">Mobile</span>
+                        </div>
+                        <h3>Mobile App Development Best Practices</h3>
+                        <p>Essential guidelines for creating successful mobile applications in 2024. Learn about performance optimization, user experience design, and cross-platform development strategies.</p>
+                        <div class="insight-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">UX</span>
+                        </div>
+                        <div class="insight-footer">
+                            <div class="author-info">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <span class="author-name">SoftCode Pro Team</span>
+                            </div>
+                            <a href="#" class="insight-link">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="insight-card">
+                    <div class="insight-image">
+                        <img
+                            class="insight-img"
+                            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1400&q=90"
+                            srcset="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1000&q=85 1000w, https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1400&q=90 1400w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 640px"
+                            alt="Cloud infrastructure concept with servers and abstract cloud visuals in a data center"
+                            loading="lazy"
+                            decoding="async"
+                            width="1400" height="900"
+                            referrerpolicy="no-referrer"
+                        >
+                        <div class="insight-overlay">
+                            <div class="overlay-content">
+                                <span class="read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                                <div class="insight-stats">
+                                    <span class="views"><i class="fas fa-eye"></i> 3.2k</span>
+                                    <span class="likes"><i class="fas fa-heart"></i> 225</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-meta">
+                            <span class="insight-date"><i class="fas fa-calendar"></i> Dec 5, 2024</span>
+                            <span class="insight-category cloud">Cloud</span>
+                        </div>
+                        <h3>Cloud Migration Strategies</h3>
+                        <p>A comprehensive guide to successful cloud migration for modern businesses. Explore different migration approaches, cost optimization techniques, and security considerations.</p>
+                        <div class="insight-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                        <div class="insight-footer">
+                            <div class="author-info">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <span class="author-name">SoftCode Pro Team</span>
+                            </div>
+                            <a href="#" class="insight-link">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="insights-cta">
+                <h3>Want to stay updated?</h3>
+                <p>Subscribe to our newsletter for the latest insights and industry trends</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input">
+                    <button class="newsletter-btn">
+                        <span>Subscribe</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next project? Let's discuss your requirements</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@hssoftware.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+94 77 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Colombo, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SoftCode Pro</h3>
+                    <p>Creating next-level software solutions for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Development</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">Database Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@hssoftware.com</p>
+                    <p><i class="fas fa-phone"></i> +94 77 123 4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SoftCode Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
