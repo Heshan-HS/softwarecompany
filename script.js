@@ -107,11 +107,18 @@ class LoadingManager {
 
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize loading manager
-    new LoadingManager();
+    // Disable loading screen behavior
+    const loadingEl = document.getElementById('loading-screen');
+    if (loadingEl) {
+        loadingEl.style.display = 'none';
+        loadingEl.classList.add('fade-out');
+    }
+    document.body.style.overflow = 'auto';
+    // Immediately notify app is ready
+    window.dispatchEvent(new CustomEvent('app:ready'));
     
-    // Prevent scrolling during loading
-    document.body.style.overflow = 'hidden';
+    // Initialize typing animation
+    initTypingAnimation();
     
     const mobileMenu = document.getElementById('mobile-menu');
     const navMenu = document.querySelector('.nav-menu');
@@ -803,3 +810,128 @@ document.addEventListener('DOMContentLoaded', () => {
         progressBar.style.width = scrollPercent + '%';
     });
 });
+
+// Advanced Python Code Typing Animation
+document.addEventListener('DOMContentLoaded', () => {
+    const codeElement = document.getElementById('typing-code');
+    if (!codeElement) return;
+    
+    const pythonCode = `<span class="comment"># Advanced AI-Powered Analytics System</span>
+<span class="keyword">import</span> numpy <span class="keyword">as</span> np
+<span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf
+<span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier
+<span class="keyword">from</span> transformers <span class="keyword">import</span> pipeline
+
+<span class="decorator">@dataclass</span>
+<span class="keyword">class</span> <span class="class-name">AIAnalytics</span>:
+    <span class="string">"""Advanced ML-powered analytics engine"""</span>
+    
+    <span class="keyword">def</span> <span class="function">__init__</span>(self, model_path: <span class="class-name">str</span>):
+        self.model = tf.keras.models.<span class="function">load_model</span>(model_path)
+        self.nlp = <span class="function">pipeline</span>(<span class="string">'sentiment-analysis'</span>)
+        self.classifier = <span class="function">RandomForestClassifier</span>(n_estimators=<span class="number">100</span>)
+    
+    <span class="keyword">async def</span> <span class="function">process_data</span>(self, data: np.ndarray) <span class="operator">-></span> <span class="class-name">dict</span>:
+        <span class="comment"># Neural network prediction</span>
+        predictions = <span class="keyword">await</span> self.<span class="function">predict_async</span>(data)
+        
+        <span class="comment"># Feature extraction using deep learning</span>
+        features = self.model.<span class="function">predict</span>(
+            tf.convert_to_tensor(data, dtype=tf.float32)
+        )
+        
+        <span class="comment"># Advanced sentiment analysis</span>
+        sentiment = self.nlp.<span class="function">analyze</span>(
+            <span class="string">"Processing customer feedback with AI"</span>
+        )
+        
+        <span class="keyword">return</span> {
+            <span class="string">'predictions'</span>: predictions,
+            <span class="string">'features'</span>: features.numpy(),
+            <span class="string">'sentiment_score'</span>: sentiment[<span class="number">0</span>][<span class="string">'score'</span>],
+            <span class="string">'confidence'</span>: <span class="function">float</span>(np.<span class="function">mean</span>(predictions))
+        }
+    
+    <span class="decorator">@staticmethod</span>
+    <span class="keyword">def</span> <span class="function">optimize_performance</span>(data: np.ndarray) <span class="operator">-></span> np.ndarray:
+        <span class="comment"># GPU-accelerated computation</span>
+        <span class="keyword">with</span> tf.device(<span class="string">'/GPU:0'</span>):
+            optimized = tf.nn.<span class="function">relu</span>(
+                tf.matmul(data, tf.<span class="function">transpose</span>(data))
+            )
+        <span class="keyword">return</span> optimized.numpy()`;
+
+    let i = 0;
+    const speed = 15; // Typing speed in milliseconds
+    
+    function typeCode() {
+        if (i < pythonCode.length) {
+            codeElement.innerHTML = pythonCode.substring(0, i + 1);
+            i++;
+            
+            // Auto-scroll as code types
+            const codeContent = codeElement.closest('.code-content');
+            if (codeContent) {
+                codeContent.scrollTop = codeContent.scrollHeight;
+            }
+            
+            setTimeout(typeCode, speed);
+        } else {
+            // Loop animation after completion
+            setTimeout(() => {
+                i = 0;
+                codeElement.innerHTML = '';
+                const codeContent = codeElement.closest('.code-content');
+                if (codeContent) {
+                    codeContent.scrollTop = 0;
+                }
+                typeCode();
+            }, 3000); // Wait 3 seconds before restarting
+        }
+    }
+    
+    // Start typing animation
+    typeCode();
+});
+
+// Hero Title Typing Animation
+function initTypingAnimation() {
+    const typingElement = document.getElementById('typing-text');
+    const cursor = document.querySelector('.typing-cursor');
+    
+    if (!typingElement || !cursor) return;
+    
+    const text = "Building Tomorrow's Digital Future";
+    const gradientStart = text.indexOf("Digital Future");
+    let index = 0;
+    
+    function typeWriter() {
+        if (index < text.length) {
+            const currentChar = text.charAt(index);
+            const currentText = text.substring(0, index + 1);
+            
+            // Apply gradient to "Digital Future" part
+            if (index >= gradientStart) {
+                const beforeGradient = text.substring(0, gradientStart);
+                const gradientText = text.substring(gradientStart, index + 1);
+                typingElement.innerHTML = beforeGradient + '<span class="gradient-text">' + gradientText + '</span>';
+            } else {
+                typingElement.textContent = currentText;
+            }
+            
+            index++;
+            
+            // Variable typing speed for more natural feel
+            const speed = currentChar === ' ' ? 100 : Math.random() * 100 + 50;
+            setTimeout(typeWriter, speed);
+        } else {
+            // Hide cursor after typing is complete
+            setTimeout(() => {
+                cursor.style.opacity = '0';
+            }, 1000);
+        }
+    }
+    
+    // Start typing after a short delay
+    setTimeout(typeWriter, 500);
+}

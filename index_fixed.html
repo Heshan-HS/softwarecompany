@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoftGen - Next Level Software Solutions</title>
+    <title>SoftCode Pro - Next Level Software Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -18,7 +18,7 @@
         <div class="loading-container">
             <div class="loading-logo">
                 <i class="fas fa-code-branch"></i>
-                <span>SoftGen</span>
+                <span>SoftCode Pro</span>
             </div>
             <div class="loading-animation">
                 <div class="loading-spinner">
@@ -47,12 +47,11 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">
-                    <img src="logo.png" alt="SoftGen Logo" class="logo-img">
-                </a>
+                <a href="#home"><i class="fas fa-code-branch"></i> SoftCode Pro</a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#showcase" class="nav-link">Showcase</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#portfolio" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
@@ -80,40 +79,21 @@
             Your browser does not support the video tag.
         </video>
         <div class="hero-container">
-            <div class="hero-split-layout">
-                <!-- Left Side: Content -->
-                <div class="hero-content-left">
-                    <h1 class="hero-title">
-                        <span id="typing-text"></span><span class="typing-cursor">|</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Premier Software Development Company
-                    </p>
-                    <p class="hero-description">
-                        We craft cutting-edge software solutions that transform businesses and drive innovation.
-                        From concept to deployment, we deliver excellence in every line of code.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get Started</a>
-                        <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
-                    </div>
-                </div>
-
-                <!-- Right Side: Code Animation -->
-                <div class="hero-code-container">
-                    <div class="code-window">
-                        <div class="code-header">
-                            <div class="code-dots">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                            </div>
-                            <span class="code-title">advanced_ai_system.py</span>
-                        </div>
-                        <div class="code-content">
-                            <pre><code id="typing-code"></code></pre>
-                        </div>
-                    </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="type" data-text="Building Tomorrow's "></span>
+                    <span class="gradient-text"><span class="type" data-text="Digital Future"></span></span>
+                </h1>
+                <p class="hero-subtitle">
+                    Premier Software Development Company
+                </p>
+                <p class="hero-description">
+                    We craft cutting-edge software solutions that transform businesses and drive innovation.
+                    From concept to deployment, we deliver excellence in every line of code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
                 </div>
             </div>
         </div>
@@ -123,7 +103,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About <span class="highlight-text">SoftGen</span></h2>
+                <h2 class="section-title">About <span class="highlight-text">SoftCode Pro</span></h2>
                 <p class="section-subtitle">Transforming ideas into powerful digital solutions</p>
             </div>
             <div class="about-content">
@@ -150,7 +130,7 @@
                         </div>
                         <h3>Our Values</h3>
                         <p>Quality, integrity, innovation, and client satisfaction are at the core of everything we do
-                            at SoftGen.</p>
+                            at SoftCode Pro.</p>
                     </div>
                 </div>
                 <div class="about-stats">
@@ -426,14 +406,14 @@
                     </div>
                 </div>
 
+
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                         <div class="icon-bg"></div>
                     </div>
                     <h3>Mobile Development</h3>
-                    <p>Native and cross-platform mobile applications for iOS and Android platforms with optimal
-                        performance.</p>
+                    <p>Native and cross-platform mobile applications for iOS and Android platforms with optimal performance.</p>
                     <div class="service-features">
                         <div class="feature-item">
                             <i class="fas fa-check"></i>
@@ -454,7 +434,7 @@
                             <span class="stat-label">Apps Built</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">4.8★</span>
+                            <span class="stat-number">4.8</span>
                             <span class="stat-label">App Rating</span>
                         </div>
                     </div>
@@ -462,84 +442,6 @@
                         <a href="#contact" class="service-btn">Get Started</a>
                     </div>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-database"></i>
-                        <div class="icon-bg"></div>
-                    </div>
-                    <h3>Database Management</h3>
-                    <p>Efficient database design, optimization, and management for scalable applications with high
-                        performance.</p>
-                    <div class="service-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Database Design</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Performance Optimization</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Data Migration</span>
-                        </div>
-                    </div>
-                    <div class="service-stats">
-                        <div class="stat">
-                            <span class="stat-number">100TB+</span>
-                            <span class="stat-label">Data Managed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">99.9%</span>
-                            <span class="stat-label">Uptime</span>
-                        </div>
-                    </div>
-                    <div class="service-footer">
-                        <a href="#contact" class="service-btn">Get Started</a>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                        <div class="icon-bg"></div>
-                    </div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Scalable cloud infrastructure and deployment solutions for modern applications with
-                        enterprise-grade security.</p>
-                    <div class="service-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Cloud Migration</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>DevOps Services</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Infrastructure Management</span>
-                        </div>
-                    </div>
-                    <div class="service-stats">
-                        <div class="stat">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Deployments</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Monitoring</span>
-                        </div>
-                    </div>
-                    <div class="service-footer">
-                        <a href="#contact" class="service-btn">Get Started</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
@@ -773,6 +675,119 @@
                     </div>
                 </div>
 
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img class="portfolio-img"
+                            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+                            srcset="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=75 900w, https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80 1200w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                            alt="AI chatbot and neural network visualization in a modern interface" loading="lazy"
+                            width="1200" height="750">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <div class="portfolio-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">85%</span>
+                                        <span class="stat-label">Efficiency</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">24/7</span>
+                                        <span class="stat-label">Active</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3>AI Chatbot Platform</h3>
+                            <div class="portfolio-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <p>Intelligent chatbot platform with natural language processing and machine learning
+                            capabilities.</p>
+                        <div class="portfolio-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <div class="portfolio-footer">
+                            <div class="project-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>8 months</span>
+                            </div>
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img class="portfolio-img"
+                            src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1400&q=85"
+                            srcset="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=700&q=75 700w, https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1400&q=85 1400w"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 450px"
+                            alt="Advanced cybersecurity concept with padlock over binary code and modern workstation"
+                            loading="lazy" decoding="async" width="1400" height="800" referrerpolicy="no-referrer"
+                            onerror="this.onerror=null; this.src='cybersecurity-suite.svg'; this.srcset='';">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <div class="portfolio-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">99.9%</span>
+                                        <span class="stat-label">Security</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">0</span>
+                                        <span class="stat-label">Breaches</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-header">
+                            <h3>Cybersecurity Suite</h3>
+                            <div class="portfolio-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <p>Enterprise-grade cybersecurity solution with threat detection and incident response
+                            automation.</p>
+                        <div class="portfolio-tags">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Blockchain</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="portfolio-footer">
+                            <div class="project-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>12 months</span>
+                            </div>
+                            <div class="project-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -855,7 +870,6 @@
                     </ul>
                     <button class="pricing-btn">BUY NOW</button>
                 </div>
-
             </div>
         </div>
     </section>
@@ -915,9 +929,8 @@
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-image">
-                        <div class="team-photo user-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="WhatsApp Image 2025-09-10 at 13.15.42_83212abf.jpg"
+                            alt="Heshan Sathyanga - CEO & Lead Developer" class="team-photo">
                         <div class="team-overlay">
                             <div class="social-links">
                                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -927,8 +940,8 @@
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Alex Johnson</h3>
-                        <p class="team-role">Lead Designer</p>
+                        <h3>Rumitha</h3>
+                        <p class="team-role">Designer</p>
                         <div class="team-skills">
                             <span class="skill-tag">Full Stack</span>
                             <span class="skill-tag">React</span>
@@ -941,9 +954,8 @@
 
                 <div class="team-card">
                     <div class="team-image">
-                        <div class="team-photo user-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="file_00000000b7f861f998b2075b3e3f4e84 (1).png" alt="Sarah Johnson - UI/UX Designer"
+                            class="team-photo">
                         <div class="team-overlay">
                             <div class="social-links">
                                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -953,8 +965,8 @@
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Sarah Mitchell</h3>
-                        <p class="team-role">Senior UI/UX Designer</p>
+                        <h3>Heshan Sathyanga</h3>
+                        <p class="team-role">UI/UX Designer</p>
                         <div class="team-skills">
                             <span class="skill-tag">Figma</span>
                             <span class="skill-tag">Adobe XD</span>
@@ -967,9 +979,8 @@
 
                 <div class="team-card">
                     <div class="team-image">
-                        <div class="team-photo user-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="Picsart_25-08-12_09-04-26-652.jpg" alt="Michael Chen - Backend Developer"
+                            class="team-photo">
                         <div class="team-overlay">
                             <div class="social-links">
                                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -979,8 +990,8 @@
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Michael Chen</h3>
-                        <p class="team-role">Senior Backend Developer</p>
+                        <h3>Shehan</h3>
+                        <p class="team-role">Backend Developer</p>
                         <div class="team-skills">
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">AWS</span>
@@ -993,9 +1004,8 @@
 
                 <div class="team-card">
                     <div class="team-image">
-                        <div class="team-photo user-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="WhatsApp Image 2025-09-10 at 20.47.12_53f230bc.jpg" alt="Dhewaka - Project Manager"
+                            class="team-photo">
                         <div class="team-overlay">
                             <div class="social-links">
                                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -1005,8 +1015,8 @@
                         </div>
                     </div>
                     <div class="team-info">
-                        <h3>Emily Rodriguez</h3>
-                        <p class="team-role">Senior Project Manager</p>
+                        <h3>Dhewaka</h3>
+                        <p class="team-role">Project Manager</p>
                         <div class="team-skills">
                             <span class="skill-tag">Agile</span>
                             <span class="skill-tag">Scrum</span>
@@ -1152,26 +1162,6 @@
                         <a href="#contact" class="service-btn">Get Quote</a>
                     </div>
                 </div>
-
-                <div class="service-item">
-                    <div class="service-header">
-                        <div class="service-icon">
-                            <i class="fas fa-pencil-ruler"></i>
-                        </div>
-                        <h3>UI/UX Design</h3>
-                    </div>
-                    <p>Creating intuitive and engaging user interfaces to provide the best user experience.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i>User Research</li>
-                        <li><i class="fas fa-check-circle"></i>Wireframing & Prototyping</li>
-                        <li><i class="fas fa-check-circle"></i>Interactive Design</li>
-                        <li><i class="fas fa-check-circle"></i>Usability Testing</li>
-                    </ul>
-                    <div class="service-footer">
-                        <span class="service-price">Starting from $1,599</span>
-                        <a href="#contact" class="service-btn">Get Quote</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1304,6 +1294,9 @@
                             <span class="insight-category development">Development</span>
                         </div>
                         <h3>The Future of Web Development</h3>
+                        <p>Exploring emerging trends and technologies shaping the future of web development. Discover
+                            the latest frameworks, tools, and methodologies that are revolutionizing how we build
+                            digital experiences.</p>
                         <div class="insight-tags">
                             <span class="tag">React</span>
                             <span class="tag">AI</span>
@@ -1314,7 +1307,7 @@
                                 <div class="author-avatar">
                                     <i class="fas fa-user"></i>
                                 </div>
-                                <span class="author-name">SoftGen Team</span>
+                                <span class="author-name">SoftCode Pro Team</span>
                             </div>
                             <a href="#" class="insight-link">
                                 <span>Read More</span>
@@ -1348,6 +1341,9 @@
                             <span class="insight-category mobile">Mobile</span>
                         </div>
                         <h3>Mobile App Development Best Practices</h3>
+                        <p>Essential guidelines for creating successful mobile applications in 2024. Learn about
+                            performance optimization, user experience design, and cross-platform development strategies.
+                        </p>
                         <div class="insight-tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">React Native</span>
@@ -1358,7 +1354,7 @@
                                 <div class="author-avatar">
                                     <i class="fas fa-user"></i>
                                 </div>
-                                <span class="author-name">SoftGen Team</span>
+                                <span class="author-name">SoftCode Pro Team</span>
                             </div>
                             <a href="#" class="insight-link">
                                 <span>Read More</span>
@@ -1392,6 +1388,8 @@
                             <span class="insight-category cloud">Cloud</span>
                         </div>
                         <h3>Cloud Migration Strategies</h3>
+                        <p>A comprehensive guide to successful cloud migration for modern businesses. Explore different
+                            migration approaches, cost optimization techniques, and security considerations.</p>
                         <div class="insight-tags">
                             <span class="tag">AWS</span>
                             <span class="tag">Azure</span>
@@ -1402,51 +1400,7 @@
                                 <div class="author-avatar">
                                     <i class="fas fa-user"></i>
                                 </div>
-                                <span class="author-name">SoftGen Team</span>
-                            </div>
-                            <a href="#" class="insight-link">
-                                <span>Read More</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="insight-card">
-                    <div class="insight-image">
-                        <img class="insight-img"
-                            src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1400&q=90"
-                            srcset="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=700&q=80 700w, https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1000&q=85 1000w, https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1400&q=90 1400w"
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 640px"
-                            alt="AI and machine learning concept with neural networks and data visualization"
-                            loading="lazy" decoding="async" width="1400" height="900" referrerpolicy="no-referrer">
-                        <div class="insight-overlay">
-                            <div class="overlay-content">
-                                <span class="read-time"><i class="fas fa-clock"></i> 8 min read</span>
-                                <div class="insight-stats">
-                                    <span class="views"><i class="fas fa-eye"></i> 4.1k</span>
-                                    <span class="likes"><i class="fas fa-heart"></i> 312</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insight-content">
-                        <div class="insight-meta">
-                            <span class="insight-date"><i class="fas fa-calendar"></i> Dec 20, 2024</span>
-                            <span class="insight-category ai">AI/ML</span>
-                        </div>
-                        <h3>AI Integration in Modern Applications</h3>
-                        <div class="insight-tags">
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">OpenAI</span>
-                        </div>
-                        <div class="insight-footer">
-                            <div class="author-info">
-                                <div class="author-avatar">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <span class="author-name">SoftGen Team</span>
+                                <span class="author-name">SoftCode Pro Team</span>
                             </div>
                             <a href="#" class="insight-link">
                                 <span>Read More</span>
@@ -1456,17 +1410,6 @@
                     </div>
                 </article>
             </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
 
             <div class="insights-cta">
                 <h3>Want to stay updated?</h3>
@@ -1532,10 +1475,7 @@
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary contact-submit-btn">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -1546,7 +1486,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>SoftGen</h3>
+                    <h3>SoftCode Pro</h3>
                     <p>Creating next-level software solutions for businesses worldwide.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -1581,7 +1521,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SoftGen. All rights reserved.</p>
+                <p>&copy; 2024 SoftCode Pro. All rights reserved.</p>
             </div>
         </div>
     </footer>
